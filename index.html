@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+</style>
+<style>
+ 
+
+   
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Surya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#secondSection">Experience</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+
+
+                </ul>
+            </div>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <img src="profile.png" alt="">
+                <div class="text">
+                    Hi, My name is <span class="purple">Surya <br></span>
+                    <div> and I am a Passionate <br>
+                        <span id="element"></span>
+                        <div class="buttons">
+                            <button class="btn" id="resumeBtn">Download Resume</button>
+                            <a href="https://github.com/surya-prakash08" target="_blank"><button class="btn">Visit
+                                    Github</button></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section id="secondSection"></section>
+        <section class="secondSection">
+            <section class="text-gray">
+                What I have done so far
+            </section>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top-custom" src="infy.png" alt="">
+                    <div class="vertical-title">
+                        Joined Infosys Ltd (2022)
+                        <div class="vertical-desc">
+                            <h4>Joined Infosys Ltd on 4th April 2022 as a Systems Engineer</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Mapped into Project(2022)
+                        <div class="vertical-desc">
+                            Started working into project as an Automation Engineer from 1st June 2022
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-custom1" src="developer3.jpg" alt="">
+                    <div class="vertical-title">
+                        Frontend Journey(2023)
+                        <div class="vertical-desc">
+                            Started learning HTML,CSS and Java Script from January 2023
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-custom1" src="developer2.jpg" alt="">
+                    <div class="vertical-title">
+                        Gig work as Frontend Developer(2023)
+                        <div class="vertical-desc">
+                            Started doing gig work listed in company's interanl job portal as a frontend developer
+                            from
+                            May 2023
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-custom" src="developer5.jpg" alt="">
+                    <div class="vertical-title">
+                        Working as Frontend Developer
+                        <div class="vertical-desc">
+
+                            Same client hired me as a Frontend Developer in October 2023 and continue in 2024
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <section id="projects"></section>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Surya's Developer portfolio </h3>
+
+            </div>
+            <div class="footer-second">
+                <div class="clone">
+                    <a href="https://sptoifylite.freewebhostmost.com/" target="_blank">
+                        <h4>Spotify Clone</h4>
+                    </a>
+                    <a href="https://sptoifylite.freewebhostmost.com/" target="_blank"><img src="spotify.png"
+                            alt=""></a>
+
+                </div>
+            </div>
+            <div class="footer-third">
+                <div class="clone">
+                    <a href="https://65b003c6b0258e1c30ac8e94--astounding-biscochitos-c55d41.netlify.app/"
+                        target="_blank">
+                        <h4>Netflix Clone</h4>
+                    </a>
+
+                    <a href="https://65b003c6b0258e1c30ac8e94--astounding-biscochitos-c55d41.netlify.app/"
+                        target="_blank"><img src="netflix.png" alt=""></a>
+
+                </div>
+            </div>
+            <div class="footer-fourth">
+                <div class="clone">
+                    <a href="https://venerable-marigold-19bc74.netlify.app/" target="_blank">
+                        <h4>Interior Design Website</h4>
+                    </a>
+                    <a href="https://venerable-marigold-19bc74.netlify.app/" target="_blank"> <img
+                            src="interiorDesign.png" alt=""></a>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="contactSection">
+        <section id="contact"></section>
+        <ul>
+            <li>Email- <br> <br> Spsurya392@gmail.com</li>
+
+
+            <a href="https://www.linkedin.com/in/ersuryait/" target="_blank">LinkedIn- <br> <br>
+                https://www.linkedin.com/in/ersuryait/</a>
+
+            <li>Phone <br> <br> +91-7003740773</li>
+        </ul>
+    </div>
+
+    <script>
+       var resume= document.getElementById("resumeBtn")
+       resume.addEventListener('click', function(){
+        var pdfPath= 'SURYA_RESUME.pdf';
+        var link= document.createElement('a')
+        link.href= pdfPath;
+        link.download= 'SURYA_RESUME.pdf';
+        link.click();
+
+       })
+
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+
+            strings: ['   ', ' Frontend  Developer ', ' DevOps Engineer', ' Automation Engineer '],
+            typeSpeed: 60,
+            loop: true,
+
+        });
+
+        
+    </script>
+       <script>
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+
+
+
+</body>
+
+</html>
